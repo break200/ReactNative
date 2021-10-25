@@ -43,6 +43,9 @@ const App = ({navigation, route}) => {
          {
             id: 10,
             title: 'useState 비동기',
+        },      {
+            id: 11,
+            title: 'useEffect 효과 처리',
         },
 
 
@@ -70,6 +73,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('EmitHome');
         }else if (item.id === 10){
             navigation.navigate('StateView');
+        }else if (item.id === 11){
+            navigation.navigate('EffectView');
         }
     }
     const renderItem = ({item , index}) => (
@@ -95,7 +100,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'center',
-        backgroundColor:'red',
+        backgroundColor:'white',
     },
     sideContainer: {
         marginTop: 30,

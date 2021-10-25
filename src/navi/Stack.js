@@ -14,6 +14,9 @@ import HooksTwo from "../screens/items/arrEdit/HooksTwo";
 import EmitHome from "../screens/items/Emit/EmitHome";
 import EmitNext from "../screens/items/Emit/EmitNext";
 import StateView from "../screens/items/state/StateView";
+import EffectView from "../screens/items/state/EffectView";
+
+
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -74,6 +77,11 @@ const StackNavigation = () => {
                 name="StateView"
                 component={StateView}
             />
+
+                <Stack.Screen
+                    name="EffectView"
+                    component={EffectView}
+                />
 
         </Stack.Navigator>
     );
