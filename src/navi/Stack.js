@@ -4,7 +4,8 @@ import App from '../screens/main/App';
 import Sviewho from '../screens/items/scrollViewH/ScrollViewH';
 import Sviewvo from '../screens/items/scrollViewV/ScrollViewV';
 import Blur from '../screens/items/blur/Blur';
-import CostomView from "../screens/items/customBtn/CostomView";
+import CostomView from '../screens/items/customBtn/CostomView';
+import HeadComponent from '../screens/items/topComponent/HeadComponent'
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -27,6 +28,10 @@ const StackNavigation = () => {
             <Stack.Screen
                 name="CostomView"
                 component={CostomView}
+            />
+            <Stack.Screen
+                name="HeadComponent"
+                component={HeadComponent}
             />
         </Stack.Navigator>
     );

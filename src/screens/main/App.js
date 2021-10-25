@@ -20,6 +20,10 @@ const App = ({navigation, route}) => {
             id: 4,
             title: 'customButton , 이미지 버튼',
         },
+        {
+            id: 5,
+            title: '하단 컴포던트 데이터 전달 다시 받아오기 ',
+        },
     ];
     useEffect(() => {
         // let subscription =  DeviceEventEmitter.addListener('emit', (events) => {
@@ -39,6 +43,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('Blur');
         }else if (item.id === 4){
             navigation.navigate('CostomView');
+        }else if (item.id === 5){
+            navigation.navigate('HeadComponent');
         }
     }
 
