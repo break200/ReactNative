@@ -30,7 +30,7 @@ const App = ({navigation, route}) => {
         },
         {
             id: 7,
-            title: '클래스 컴포던트 데이터 전달',
+            title: 'setState 비동기 처리 데이터 전달',
         },
     ];
 
