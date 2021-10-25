@@ -8,6 +8,8 @@ import CostomView from '../screens/items/customBtn/CostomView';
 import HeadComponent from '../screens/items/topComponent/HeadComponent'
 import AsyncStorageView from "../screens/items/asyncStorage/AsyncStorageView";
 import AsyncStorageNext from "../screens/items/asyncStorage/AsyncStorageNext";
+import ClassComponent from "../screens/items/classComponent/ClassComponent";
+
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -42,6 +44,10 @@ const StackNavigation = () => {
             <Stack.Screen
                 name="AsyncStorageNext"
                 component={AsyncStorageNext}
+            />
+            <Stack.Screen
+                name="ClassComponent"
+                component={ClassComponent}
             />
         </Stack.Navigator>
     );

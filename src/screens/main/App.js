@@ -28,6 +28,10 @@ const App = ({navigation, route}) => {
             id: 6,
             title: '스토리지 저장',
         },
+        {
+            id: 7,
+            title: '클래스 컴포던트 데이터 전달',
+        },
     ];
 
     //눌렀을경우 버튼 이벤트
@@ -44,6 +48,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('HeadComponent');
         }else if (item.id === 6){
             navigation.navigate('AsyncStorageView');
+        }else if (item.id === 7){
+            navigation.navigate('ClassComponent');
         }
     }
 
