@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View,FlatList ,TouchableWithoutFeedback} from 'react-native';
+import HooksTwo from "../items/arrEdit/HooksTwo";
 
 const App = ({navigation, route}) => {
 
@@ -32,6 +33,16 @@ const App = ({navigation, route}) => {
             id: 7,
             title: 'setState 비동기 처리 데이터 전달',
         },
+        {
+            id: 8,
+            title: 'useState 배열 수정 및 추가',
+        }, {
+            id: 9,
+            title: 'Emit 노티 저장 ',
+        },
+
+
+
     ];
 
     //눌렀을경우 버튼 이벤트
@@ -50,10 +61,13 @@ const App = ({navigation, route}) => {
             navigation.navigate('AsyncStorageView');
         }else if (item.id === 7){
             navigation.navigate('ClassComponent');
+        }else if (item.id === 8){
+            navigation.navigate('HooksOne');
+        }else if (item.id === 9){
+            navigation.navigate('EmitHome');
         }
     }
-
-
+    HooksTwo
     const renderItem = ({item , index}) => (
         <View style={{width:'100%' , height:45}}>
             <TouchableWithoutFeedback onPress={() => onPress(item)}>

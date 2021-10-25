@@ -9,7 +9,10 @@ import HeadComponent from '../screens/items/topComponent/HeadComponent'
 import AsyncStorageView from "../screens/items/asyncStorage/AsyncStorageView";
 import AsyncStorageNext from "../screens/items/asyncStorage/AsyncStorageNext";
 import ClassComponent from "../screens/items/classComponent/ClassComponent";
-
+import HooksOne from "../screens/items/arrEdit/HooksOne";
+import HooksTwo from "../screens/items/arrEdit/HooksTwo";
+import EmitHome from "../screens/items/Emit/EmitHome";
+import EmitNext from "../screens/items/Emit/EmitNext";
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -48,6 +51,22 @@ const StackNavigation = () => {
             <Stack.Screen
                 name="ClassComponent"
                 component={ClassComponent}
+            />
+                <Stack.Screen
+                    name="HooksOne"
+                    component={HooksOne}
+                />
+            <Stack.Screen
+                name="HooksTwo"
+                component={HooksTwo}
+            />
+            <Stack.Screen
+                name="EmitHome"
+                component={EmitHome}
+            />
+            <Stack.Screen
+                name="EmitNext"
+                component={EmitNext}
             />
         </Stack.Navigator>
     );
