@@ -40,7 +40,10 @@ const App = ({navigation, route}) => {
             id: 9,
             title: 'Emit 노티 저장 ',
         },
-
+         {
+            id: 10,
+            title: '리덕스 통신 컴포던트 구현',
+        },
 
 
     ];
@@ -65,6 +68,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('HooksOne');
         }else if (item.id === 9){
             navigation.navigate('EmitHome');
+        }else if (item.id === 10){
+            navigation.navigate('ReduxView');
         }
     }
     HooksTwo
