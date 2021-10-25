@@ -42,7 +42,7 @@ const App = ({navigation, route}) => {
         },
          {
             id: 10,
-            title: '리덕스 통신 컴포던트 구현',
+            title: 'useState 비동기',
         },
 
 
@@ -69,10 +69,9 @@ const App = ({navigation, route}) => {
         }else if (item.id === 9){
             navigation.navigate('EmitHome');
         }else if (item.id === 10){
-            navigation.navigate('ReduxView');
+            navigation.navigate('StateView');
         }
     }
-    HooksTwo
     const renderItem = ({item , index}) => (
         <View style={{width:'100%' , height:45}}>
             <TouchableWithoutFeedback onPress={() => onPress(item)}>

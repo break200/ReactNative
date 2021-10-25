@@ -13,7 +13,7 @@ import HooksOne from "../screens/items/arrEdit/HooksOne";
 import HooksTwo from "../screens/items/arrEdit/HooksTwo";
 import EmitHome from "../screens/items/Emit/EmitHome";
 import EmitNext from "../screens/items/Emit/EmitNext";
-import ReduxView from "../screens/items/redux/ReduxView";
+import StateView from "../screens/items/state/StateView";
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -71,8 +71,8 @@ const StackNavigation = () => {
             />
 
             <Stack.Screen
-                name="ReduxView"
-                component={ReduxView}
+                name="StateView"
+                component={StateView}
             />
 
         </Stack.Navigator>
