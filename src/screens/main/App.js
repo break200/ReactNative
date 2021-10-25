@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {StyleSheet, Text, View, TouchableOpacity, Button , DeviceEventEmitter ,FlatList ,TouchableWithoutFeedback} from 'react-native';
+import React from 'react';
+import {StyleSheet, Text, View,FlatList ,TouchableWithoutFeedback} from 'react-native';
 
 const App = ({navigation, route}) => {
 
@@ -24,14 +24,11 @@ const App = ({navigation, route}) => {
             id: 5,
             title: '하단 컴포던트 데이터 전달 다시 받아오기 ',
         },
+        {
+            id: 6,
+            title: '스토리지 저장',
+        },
     ];
-    useEffect(() => {
-        // let subscription =  DeviceEventEmitter.addListener('emit', (events) => {
-        //     alert(`${events.taobaoBind}`);
-        // })
-        //구독 삭제
-        // subscription.remove()
-    }, []);
 
     //눌렀을경우 버튼 이벤트
     function onPress(item) {
@@ -45,6 +42,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('CostomView');
         }else if (item.id === 5){
             navigation.navigate('HeadComponent');
+        }else if (item.id === 6){
+            navigation.navigate('AsyncStorageView');
         }
     }
 

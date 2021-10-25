@@ -6,6 +6,8 @@ import Sviewvo from '../screens/items/scrollViewV/ScrollViewV';
 import Blur from '../screens/items/blur/Blur';
 import CostomView from '../screens/items/customBtn/CostomView';
 import HeadComponent from '../screens/items/topComponent/HeadComponent'
+import AsyncStorageView from "../screens/items/asyncStorage/AsyncStorageView";
+import AsyncStorageNext from "../screens/items/asyncStorage/AsyncStorageNext";
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -32,6 +34,14 @@ const StackNavigation = () => {
             <Stack.Screen
                 name="HeadComponent"
                 component={HeadComponent}
+            />
+            <Stack.Screen
+                name="AsyncStorageView"
+                component={AsyncStorageView}
+            />
+            <Stack.Screen
+                name="AsyncStorageNext"
+                component={AsyncStorageNext}
             />
         </Stack.Navigator>
     );
