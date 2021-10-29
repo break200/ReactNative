@@ -1,16 +1,8 @@
-import React, {useState, useEffect ,useCallback} from 'react';
+import React, { useEffect ,useCallback} from 'react';
 import { useIsFocused ,useFocusEffect} from '@react-navigation/native';
-import {StyleSheet, Text, View, TouchableOpacity, Button , DeviceEventEmitter} from 'react-native';
+import {StyleSheet, View, Button } from 'react-native';
 
-const EmitHome = ({navigation, route}) => {
-
-    useEffect(() => {
-        let subscription =  DeviceEventEmitter.addListener('emit', (events) => {
-            alert(`${events.taobaoBind}`);
-        })
-        //구독 삭제
-        // subscription.remove()
-    }, []);
+const FocusView = ({navigation, route}) => {
 
     useFocusEffect(
         useCallback(() => {
@@ -37,7 +29,7 @@ const EmitHome = ({navigation, route}) => {
 
 
     const onPress = () => {
-        navigation.navigate('FocusNext');
+        navigation.navigate('EmitNext');
     };
 
     return (
@@ -64,4 +56,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default EmitHome;
+export default FocusView;

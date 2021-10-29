@@ -46,9 +46,10 @@ const App = ({navigation, route}) => {
         },      {
             id: 11,
             title: 'useEffect 효과 처리',
+        },      {
+            id: 12,
+            title: 'Focused 콜백 처리',
         },
-
-
     ];
 
     //눌렀을경우 버튼 이벤트
@@ -75,6 +76,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('StateView');
         }else if (item.id === 11){
             navigation.navigate('EffectView');
+        }else if (item.id === 12){
+            navigation.navigate('FocusView');
         }
     }
     const renderItem = ({item , index}) => (

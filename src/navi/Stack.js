@@ -15,7 +15,8 @@ import EmitHome from "../screens/items/Emit/EmitHome";
 import EmitNext from "../screens/items/Emit/EmitNext";
 import StateView from "../screens/items/state/StateView";
 import EffectView from "../screens/items/state/EffectView";
-
+import FocusView from "../screens/items/focus/FocusView";
+import FocusNext from "../screens/items/focus/FocusNext";
 
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -82,6 +83,14 @@ const StackNavigation = () => {
                     name="EffectView"
                     component={EffectView}
                 />
+            <Stack.Screen
+                name="FocusView"
+                component={FocusView}
+            />
+            <Stack.Screen
+            name="FocusNext"
+            component={FocusNext}
+        />
 
         </Stack.Navigator>
     );
