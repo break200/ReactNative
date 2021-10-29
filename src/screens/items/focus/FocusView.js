@@ -29,7 +29,7 @@ const FocusView = ({navigation, route}) => {
 
 
     const onPress = () => {
-        navigation.navigate('EmitNext');
+        navigation.navigate('FocusNext');
     };
 
     return (

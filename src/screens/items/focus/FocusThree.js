@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {Button, StyleSheet , View} from 'react-native';
 
-const FocusNext = ({route, navigation}) => {
+const FocusThree = ({route, navigation}) => {
 
     const onPress = () => {
-        navigation.navigate('FocusThree');
+        navigation.goBack();
+        navigation.goBack();
     };
 
     return (
         <View style={styles.StyleSheet}>
-            <Button title={'다음 페이지'} onPress={onPress}/>
+            <Button title={'처음화면으로'} onPress={onPress}/>
         </View>
     );
 };
@@ -33,4 +34,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default FocusNext;
+export default FocusThree;

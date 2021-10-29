@@ -17,7 +17,7 @@ import StateView from "../screens/items/state/StateView";
 import EffectView from "../screens/items/state/EffectView";
 import FocusView from "../screens/items/focus/FocusView";
 import FocusNext from "../screens/items/focus/FocusNext";
-
+import FocusThree from "../screens/items/focus/FocusThree";
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
     return (
@@ -91,6 +91,10 @@ const StackNavigation = () => {
             name="FocusNext"
             component={FocusNext}
         />
+            <Stack.Screen
+                name="FocusThree"
+                component={FocusThree}
+            />
 
         </Stack.Navigator>
     );
