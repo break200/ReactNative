@@ -49,6 +49,9 @@ const App = ({navigation, route}) => {
         },      {
             id: 12,
             title: 'Focused 콜백 처리',
+        },      {
+            id: 13,
+            title: 'Hook 정리',
         },
     ];
 
@@ -78,6 +81,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('EffectView');
         }else if (item.id === 12){
             navigation.navigate('FocusView');
+        }else if (item.id === 13){
+            navigation.navigate('Index');
         }
     }
     const renderItem = ({item , index}) => (

@@ -12,10 +12,9 @@ const FocusView = ({navigation, route}) => {
 
 // useEffect + focus 이벤트
     useEffect(() => {
-        const unsubscribe = navigation.addListener('focus', () => {
+        return navigation.addListener('focus', () => {
             console.log('focus');
         });
-        return unsubscribe;
     }, [navigation]);
 
 // useIsFocused
