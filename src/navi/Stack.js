@@ -20,7 +20,10 @@ import FocusNext from "../screens/items/focus/FocusNext";
 import FocusThree from "../screens/items/focus/FocusThree";
 import Index from "../screens/items/Hook/Index"
 import UseCallBackView from "../screens/items/Hook/CallBack/UseCallBackView"
-import UseMemoView from "../screens/items/Hook/Memo/UseMemoView"
+// import UseMemoView from "../screens/items/Hook/Memo/UseMemoView"
+import ReactBrigeView from "../screens/items/Brige/ReactBrigeView";
+import IosView from "../screens/items/Brige/IosView";
+import AosView from "../screens/items/Brige/AosView";
 
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -107,9 +110,22 @@ const StackNavigation = () => {
                 name="UseCallBackView"
                 component={UseCallBackView}
             />
+            {/*<Stack.Screen*/}
+            {/*    name="UseMemoView"*/}
+            {/*    component={UseMemoView}*/}
+            {/*/>*/}
+
             <Stack.Screen
-                name="UseMemoView"
-                component={UseMemoView}
+                name="ReactBrigeView"
+                component={ReactBrigeView}
+            />
+            <Stack.Screen
+                name="IosView"
+                component={IosView}
+            />
+            <Stack.Screen
+                name="AosView"
+                component={AosView}
             />
 
         </Stack.Navigator>

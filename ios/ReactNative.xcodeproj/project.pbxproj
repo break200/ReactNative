@@ -12,6 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2E13EBE227380DCB00B1BE0E /* SomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13EBE127380DCB00B1BE0E /* SomeModule.swift */; };
+		2E13EBE427380DF700B1BE0E /* SomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E13EBE327380DF700B1BE0E /* SomeModule.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DE56FFBD0DFB867C8DAD62EB /* libPods-ReactNative-ReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB31B61C0A9E9AAED9E61E77 /* libPods-ReactNative-ReactNativeTests.a */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNative/main.m; sourceTree = "<group>"; };
+		2E13EBE027380DCA00B1BE0E /* ReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E13EBE127380DCB00B1BE0E /* SomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeModule.swift; sourceTree = "<group>"; };
+		2E13EBE327380DF700B1BE0E /* SomeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeModule.m; sourceTree = "<group>"; };
 		552D3FBE0522FBCD1E023EC2 /* Pods-ReactNative-ReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNative-ReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNative-ReactNativeTests/Pods-ReactNative-ReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8C5ABA6AFBFB748534C776A /* Pods-ReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNative.debug.xcconfig"; path = "Target Support Files/Pods-ReactNative/Pods-ReactNative.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,10 +93,13 @@
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				2E13EBE127380DCB00B1BE0E /* SomeModule.swift */,
+				2E13EBE327380DF700B1BE0E /* SomeModule.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				2E13EBE027380DCA00B1BE0E /* ReactNative-Bridging-Header.h */,
 			);
 			name = ReactNative;
 			sourceTree = "<group>";
@@ -145,7 +153,6 @@
 				552D3FBE0522FBCD1E023EC2 /* Pods-ReactNative-ReactNativeTests.debug.xcconfig */,
 				B13CE4ED9C04E62422C9EEF9 /* Pods-ReactNative-ReactNativeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +215,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -411,6 +418,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E13EBE227380DCB00B1BE0E /* SomeModule.swift in Sources */,
+				2E13EBE427380DF700B1BE0E /* SomeModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -431,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 552D3FBE0522FBCD1E023EC2 /* Pods-ReactNative-ReactNativeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B13CE4ED9C04E62422C9EEF9 /* Pods-ReactNative-ReactNativeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeTests/Info.plist;
@@ -498,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReactNative;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

@@ -52,6 +52,9 @@ const App = ({navigation, route}) => {
         },      {
             id: 13,
             title: 'Hook 정리',
+        },      {
+            id: 14,
+            title: '네이티브 브릿지',
         },
     ];
 
@@ -83,6 +86,8 @@ const App = ({navigation, route}) => {
             navigation.navigate('FocusView');
         }else if (item.id === 13){
             navigation.navigate('Index');
+        }else if (item.id === 14){
+            navigation.navigate('ReactBrigeView');
         }
     }
     const renderItem = ({item , index}) => (
