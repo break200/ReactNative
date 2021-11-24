@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Baund.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>0.20.030</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>7C38CBBA5302E7D82A9E1FD39F457B8D2E8D03BC</string>
+				<key>dateExpires</key>
+				<string>2022/11/02</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7C38CBBA5302E7D82A9E1FD39F457B8D2E8D03BC</string>
+						<key>dateExpires</key>
+						<string>2022/11/02</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>DeepAR.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>6SCMS5NHSF</string>
+						<key>name</key>
+						<string>IDID Incorporation</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7C38CBBA5302E7D82A9E1FD39F457B8D2E8D03BC</string>
+						<key>dateExpires</key>
+						<string>2022/11/02</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>OpenSSL.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>6SCMS5NHSF</string>
+						<key>name</key>
+						<string>IDID Incorporation</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.1.180</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>6SCMS5NHSF.inc.idid.kiinrap</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.applesignin</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>applinks:baund.page.link</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>6SCMS5NHSF</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Baund.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>aabed469-b038-4517-991b-383ae0dea8a7</string>
+				<key>dateExpires</key>
+				<string>2022/11/02</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: inc.idid.kiinrap</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>6SCMS5NHSF</string>
+				<key>name</key>
+				<string>IDID Incorporation</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>0.20.01</string>
+		</dict>
+	</array>
+</dict>
+</plist>
