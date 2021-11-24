@@ -1,31 +1,21 @@
 import React from 'react';
 import {StyleSheet, Text, View,FlatList ,TouchableWithoutFeedback} from 'react-native';
 
-const App = ({navigation, route}) => {
+const SketchView = ({navigation, route}) => {
 
     const flats = [
         {
             id: 1,
-            title: 'UI 관련',
+            title: 'Unboarding',
         },
-        {
-            id: 2,
-            title: 'react 기능 관',
-        },
-        {
-            id: 3,
-            title: '스케치 UI',
-        },
+
+
     ];
 
     //눌렀을경우 버튼 이벤트
     function onPress(item) {
         if (item.id === 1){
-            navigation.navigate('UIView');
-        }else if (item.id === 2){
-            navigation.navigate('SkillView');
-        }else if (item.id === 3){
-            navigation.navigate('SketchView');
+            navigation.navigate('UnBoardingView');
         }
     }
     const renderItem = ({item , index}) => (
@@ -61,4 +51,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default App;
+export default SketchView;

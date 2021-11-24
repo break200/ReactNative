@@ -24,6 +24,11 @@ import UseCallBackView from "../screens/items/Hook/CallBack/UseCallBackView"
 import ReactBrigeView from "../screens/items/Brige/ReactBrigeView";
 import IosView from "../screens/items/Brige/IosView";
 import AosView from "../screens/items/Brige/AosView";
+import UIView from "../screens/main/UIView";
+import SkillView from "../screens/main/SkillView";
+import SketchView from "../screens/main/SketchView";
+import UnBoardingView from "../screens/items/Sketch/UnBoarding/UnBoardingView";
+import TextInputScreen from "../screens/items/TextInput/TextInputScreen"
 
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -127,6 +132,27 @@ const StackNavigation = () => {
                 name="AosView"
                 component={AosView}
             />
+            <Stack.Screen
+                name="UIView"
+                component={UIView}
+            />
+            <Stack.Screen
+                name="SkillView"
+                component={SkillView}
+            />
+            <Stack.Screen
+                name="SketchView"
+                component={SketchView}
+            />
+            <Stack.Screen
+                name="UnBoardingView"
+                component={UnBoardingView}
+            />
+            <Stack.Screen
+                name="TextInputScreen"
+                component={TextInputScreen}
+            />
+
 
         </Stack.Navigator>
     );

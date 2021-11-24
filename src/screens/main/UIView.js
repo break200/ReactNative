@@ -1,31 +1,44 @@
 import React from 'react';
 import {StyleSheet, Text, View,FlatList ,TouchableWithoutFeedback} from 'react-native';
 
-const App = ({navigation, route}) => {
+const UIView = ({navigation, route}) => {
 
     const flats = [
         {
             id: 1,
-            title: 'UI 관련',
+            title: 'scrollView horizontal',
         },
         {
             id: 2,
-            title: 'react 기능 관',
+            title: 'scrollView Vertical',
         },
         {
             id: 3,
-            title: '스케치 UI',
+            title: 'blurView',
         },
+        {
+            id: 4,
+            title: 'customButton , 이미지 버튼',
+        },
+        {
+            id: 5,
+            title: 'textInput',
+        },
+
     ];
 
     //눌렀을경우 버튼 이벤트
     function onPress(item) {
         if (item.id === 1){
-            navigation.navigate('UIView');
+            navigation.navigate('Sviewho');
         }else if (item.id === 2){
-            navigation.navigate('SkillView');
+            navigation.navigate('Sviewvo');
         }else if (item.id === 3){
-            navigation.navigate('SketchView');
+            navigation.navigate('Blur');
+        }else if (item.id === 4){
+            navigation.navigate('CostomView');
+        }else if (item.id === 5){
+            navigation.navigate('TextInputScreen');
         }
     }
     const renderItem = ({item , index}) => (
@@ -61,4 +74,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default App;
+export default UIView;
