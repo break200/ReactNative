@@ -42,6 +42,9 @@ const FlatListView = () => {
         setLists(arr);
     };
 
+    const buttonItem = (index) => {
+        alert(index);
+    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -49,7 +52,7 @@ const FlatListView = () => {
                     <FlatList
                         data={lists}
                         renderItem={({item, index}) => {
-                            return <ItemBox data={item} handleDelete={() => deleteItem(index)} />;
+                            return <ItemBox data={item} handleDelete={() => deleteItem(index)}  buttonIndex={() => buttonItem(index) }  />;
                         }}
                         // ItemSeparatorComponent={() => {
                         //     return <View style={styles.seperatorLine}/>;

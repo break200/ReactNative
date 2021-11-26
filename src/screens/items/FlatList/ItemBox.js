@@ -5,6 +5,7 @@ import {
     StyleSheet,
     Dimensions,
     Animated,
+    Button,
     TouchableOpacity,
 } from 'react-native';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
@@ -35,7 +36,10 @@ const ItemBox = (props) => {
     return (
         <Swipeable renderRightActions={rightSwipe}>
             <View style={styles.container}>
-                <Text>My name is {props.data.name}.</Text>
+
+                <Text style={{width:180}}>My name is {props.data.name}.</Text>
+                <Text style={{width:180}}>id === {props.data.id}.</Text>
+                <Button style={styles.buttoncontainer} title={'dddd'} onPress={props.buttonIndex}/>
             </View>
         </Swipeable>
     );
@@ -48,7 +52,17 @@ const styles = StyleSheet.create({
         height: 80,
         width: SCREEN_WIDTH,
         backgroundColor: 'white',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
+        alignItems:'center',
+        padding: 16,
+        flexDirection:'row'
+    },
+    buttoncontainer: {
+        height: 80,
+        width: 80,
+        backgroundColor: 'blue',
+        justifyContent: 'flex-end',
+        alignItems:'flex-end',
         padding: 16,
     },
     deleteBox: {
