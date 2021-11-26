@@ -29,6 +29,7 @@ import SkillView from "../screens/main/SkillView";
 import SketchView from "../screens/main/SketchView";
 import UnBoardingView from "../screens/items/Sketch/UnBoarding/UnBoardingView";
 import TextInputScreen from "../screens/items/TextInput/TextInputScreen"
+import FlatListView from "../screens/items/FlatList/FlatListView"
 
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -152,8 +153,10 @@ const StackNavigation = () => {
                 name="TextInputScreen"
                 component={TextInputScreen}
             />
-
-
+            <Stack.Screen
+                name="FlatListView"
+                component={FlatListView}
+            />
         </Stack.Navigator>
     );
 };

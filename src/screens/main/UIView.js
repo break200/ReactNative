@@ -24,6 +24,10 @@ const UIView = ({navigation, route}) => {
             id: 5,
             title: 'textInput',
         },
+        {
+            id: 6,
+            title: 'FlatList',
+        },
 
     ];
 
@@ -39,6 +43,8 @@ const UIView = ({navigation, route}) => {
             navigation.navigate('CostomView');
         }else if (item.id === 5){
             navigation.navigate('TextInputScreen');
+        }else if (item.id === 6){
+            navigation.navigate('FlatListView');
         }
     }
     const renderItem = ({item , index}) => (
