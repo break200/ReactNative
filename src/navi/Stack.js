@@ -30,6 +30,8 @@ import SketchView from "../screens/main/SketchView";
 import UnBoardingView from "../screens/items/Sketch/UnBoarding/UnBoardingView";
 import TextInputScreen from "../screens/items/TextInput/TextInputScreen"
 import FlatListView from "../screens/items/FlatList/FlatListView"
+import SortView from "../screens/items/Sort/SortView";
+import DataView from "../screens/main/DataView";
 
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -156,6 +158,14 @@ const StackNavigation = () => {
             <Stack.Screen
                 name="FlatListView"
                 component={FlatListView}
+            />
+            <Stack.Screen
+                name="DataView"
+                component={DataView}
+            />
+            <Stack.Screen
+                name="SortView"
+                component={SortView}
             />
         </Stack.Navigator>
     );
