@@ -3,15 +3,55 @@ import {Button, StyleSheet, Text,View , NativeModules } from 'react-native';
 
 const IosView = ({route, navigation}) => {
 
+    const { SomeModule } = NativeModules;
+
     const onPress = () => {
-        const share = NativeModules.SomeModule;
-        share?.someMethod('someParameter');
+        SomeModule?.someMethod('someParameter');
     };
+
+    const onPressKeyValue = () => {
+
+        SomeModule?.getAllTasks(
+            {
+                name: 'idid',
+                email: 'token',
+            },
+            (error, tasks) => {
+                if (!error) {
+                    // setTimeout(() => {
+                    //     setDeviceToken(tasks[0].token);
+                    // }, 1500);
+                    // const key = tasks[0].key
+                    // const date = tasks[0].date
+                    // console.log(key);
+                    // alert(date);
+                }
+            },
+        );
+    }
+
+    const onPressString = () => {
+        SomeModule?.getAllTasksString('sendString',
+            (error, tasks) => {
+                if (!error) {
+                    // setTimeout(() => {
+                    //     setDeviceToken(tasks[0].token);
+                    // }, 1500);
+                    // const key = tasks[0].key
+                    // const date = tasks[0].date
+                    // console.log(key);
+                    // alert(date);
+                }
+            },
+        );
+    }
 
     return (
         <View style={styles.StyleSheet}>
             <Text>브릿지 연결</Text>
             <Button title={'IOS 데이터 전송'} onPress={onPress}/>
+            <Button title={'react => ios => react callBack keyvalue'} onPress={onPressKeyValue}/>
+            <Button title={'react => ios => react callBack string'} onPress={onPressString}/>
         </View>
     );
 };
