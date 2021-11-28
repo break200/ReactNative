@@ -15,7 +15,8 @@ class SomeModule: NSObject {
 
   @objc(getAllTasks:callback:)
   func getAllTasks(params:[String:Any] , callback:RCTResponseSenderBlock){
-    let tasks = ["key":"fcmToken","date":"current_date_string"]
-    callback([NSNull(),tasks])
+      let tasks = ["key":"fcmToken","date":"current_date_string","completion":"false"]
+      
+      callback([NSNull(),tasks])
   }
 }
