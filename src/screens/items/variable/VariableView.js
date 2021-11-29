@@ -24,12 +24,22 @@ const VariableView = () => {
         variable.three = variable.three + 1;
     }
 
+    //시간차 지연
+    const delay = () => {
+       const data = [1,2,3,4,5];
+       for (let i = 0 ; i < data.length; i++ ){
+           setTimeout( () => {console.log(i)},  i * 2000);
+       }
+    }
+
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.container}>
                 <View style={{width:'100%',height: 80}}>
                     <Button style={{width: 50 ,height: 50}} title={'for문 로그 찍기'} onPress={down}/>
                     <Button style={{width: 50 ,height: 50}} title={'변수 변경'} onPress={top}/>
+                    <Button style={{width: 50 ,height: 50}} title={'딜레이 호출'} onPress={delay}/>
                 </View>
             </View>
         </SafeAreaView>
