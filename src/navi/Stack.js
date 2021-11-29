@@ -32,6 +32,7 @@ import TextInputScreen from "../screens/items/TextInput/TextInputScreen"
 import FlatListView from "../screens/items/FlatList/FlatListView"
 import SortView from "../screens/items/Sort/SortView";
 import DataView from "../screens/main/DataView";
+import VariableView from "../screens/items/variable/VariableView";
 
 const StackNavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -166,6 +167,10 @@ const StackNavigation = () => {
             <Stack.Screen
                 name="SortView"
                 component={SortView}
+            />
+            <Stack.Screen
+                name="VariableView"
+                component={VariableView}
             />
         </Stack.Navigator>
     );

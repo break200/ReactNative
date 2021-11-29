@@ -38,6 +38,9 @@ const SkillView = ({navigation, route}) => {
         },      {
             id: 14,
             title: '네이티브 브릿지',
+        },    {
+            id: 15,
+            title: '변수 및  로그 ',
         },
     ];
 
@@ -63,6 +66,8 @@ const SkillView = ({navigation, route}) => {
             navigation.navigate('Index');
         }else if (item.id === 14){
             navigation.navigate('ReactBrigeView');
+        }else if (item.id === 15){
+            navigation.navigate('VariableView');
         }
     }
     const renderItem = ({item , index}) => (
